@@ -1,0 +1,22 @@
+
+/* <button class="btn">Button</button>
+<button class="btn" disabled>Disabled button</button> */
+
+.btn {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0 25px;
+  margin: 0 15px 15px 0;
+  border-radius: 50px;
+  height: 46px;
+  line-height: 46px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.btn:active {
+  background-color: red;
+}
+.btn:disabled {
+  background-color: grey;
+  cursor: not-allowed;
+}

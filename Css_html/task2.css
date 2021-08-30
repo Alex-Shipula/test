@@ -1,0 +1,25 @@
+
+
+/* <div class="modal-container">
+    <div class="modal">  
+     </div>
+     </div> */
+
+
+.modal-container {
+  display: grid;
+  grid-template-areas:
+    ". . ."
+    ". a ."
+    ". . .";
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  justify-content: center;
+}
+.modal {
+  grid-area: a;
+  width: 200px;
+  height: 100px;
+  background-color: green;
+}

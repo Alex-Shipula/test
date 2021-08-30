@@ -1,0 +1,21 @@
+1) db.posts.find().skip(5).limit(5) 
+
+2)  db.posts.find({"properties.like":{$gt: 100}}).pretty()
+
+3)   db.posts.insertOne({"properties": { "title":"My text",
+"content": "content","author":"Alex","like":56,"dislike":15} } )
+
+4) db.scores.aggregate(
+  [
+    {
+      '$match': {}
+    }, {
+    '$group': {
+      '_id': '$author',
+      'count': {
+        '$sum': 1
+      }
+    }
+  }
+  ]
+)

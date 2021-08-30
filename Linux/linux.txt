@@ -1,0 +1,6 @@
+# Просмотр содержимого папки html
+$ls -a /var/www/html
+# Поиск в файле access.log  все упоминания строки 404
+$ more +/404 /var/logs/access.log
+# Вывод всех файлов в папке var
+$ls -a /var

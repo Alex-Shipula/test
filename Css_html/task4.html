@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Login Form</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Login Form</h1>
+    </header>
+    <section>
+      <div>
+        <p>
+          <label class="user-email"> Enter your email</label>
+          <input
+            id="email"
+            type="text"
+            placeholder="alexshipula@gmail.com"
+            required
+          />
+        </p>
+        <p>
+          <label class="user-password"> Your password </label>
+          <input
+            id="password"
+            type="password"
+            placeholder="admin.admin"
+            pattern="[0-9a-fA-F]{4,8}"
+            title="Enter an ID consisting of 4-8 hexadecimal digits"
+            required
+          />
+        </p>
+        <p class="keeplogin">
+          <input type="checkbox" />
+          <label>Keep me logged in</label>
+        </p>
+        <p class="login button">
+          <input type="submit" />
+        </p>
+      </div>
+    </section>
+  </div>
+</body>
